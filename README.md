@@ -1,6 +1,6 @@
 # PHP Syntax checker (lint) action
 
-This action controls the syntax of php files in a folder, excluding the vendor folder.
+This action controls the syntax of .php and .ctp files in a folder, excluding the vendor folder.
 
 ## Inputs
 
@@ -22,17 +22,4 @@ The folder to control. Default `"."`.
 You can use :
 ```
 stuudium/actions-php-lint@7.4
-stuudium/actions-php-lint@7.3
-stuudium/actions-php-lint@7.2
-stuudium/actions-php-lint@7.1
-stuudium/actions-php-lint@7.0
-stuudium/actions-php-lint@5.6
 ```
-
-## On success
-
-![On success](docs/on-success.png)
-
-## On failure
-
-![On success](docs/on-failure.png)
