@@ -19,7 +19,7 @@ if [ ! -d "${DIR_TO_SCAN}" ] && [ ! -f "${DIR_TO_SCAN}" ]; then
   exit 2
 fi
 
-find "${DIR_TO_SCAN}" -type f -name '*.php' -o -name '*.ctp' ! -path './vendor/*' -print0 \
-     | xargs -0 -n 1 php -l | (! grep -Ev '^No syntax errors detected in ')
+find "${DIR_TO_SCAN}" -type f \( -name '*.php' -o -name '*.ctp' \) ! -path './vendor/*' -print0 \
+     | xargs -0 -n 1 php -l | (! grep -Ev '^No xsyntax errors detected in ')
 
 exit "${?}"
