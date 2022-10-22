@@ -9,10 +9,10 @@ inputs:
     required: false
     default: '.'
 runs:
-  using: 'docker'
-  image: 'docker://stuudium/actions-php-lint:7.4'
-  credentials:
-     username: ${{ github.actor }}
-     password: ${{ secrets.github_token }}
+  container:
+    image: 'docker://stuudium/actions-php-lint:7.4'
+    credentials:
+      username: ${{ github.actor }}
+      password: ${{ secrets.github_token }}
   args:
     - ${{ inputs.dir }}
