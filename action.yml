@@ -9,6 +9,7 @@ inputs:
     required: false
     default: '.'
 runs:
+  using: 'docker'
   container:
     image: 'docker://stuudium/actions-php-lint:7.4'
     credentials:
