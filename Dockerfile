@@ -1,4 +1,4 @@
-FROM php:7.4-cli
+FROM php:7.4-cli-alpine
 
 LABEL version="7.4"
 LABEL repository="https://github.com/stuudium/actions-php-lint"
