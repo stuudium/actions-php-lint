@@ -10,6 +10,6 @@ inputs:
     default: '.'
 runs:
   using: 'docker'
-  image: 'ghcr.io/stuudium/actions-php-lint:7.4'
+  image: 'docker://ghcr.io/stuudium/actions-php-lint:7.4'
   args:
     - ${{ inputs.dir }}
