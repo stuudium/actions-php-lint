@@ -9,7 +9,7 @@ else
   DIR_TO_SCAN="$1"
 fi
 
-echo "## Running PHP Syntax Checker (lint) on ${DIR_TO_SCAN}"
+echo "## v20240527 ## Running PHP Syntax Checker (lint) on ${DIR_TO_SCAN}"
 echo "PHP Version : ${PHP_FULL_VERSION}"
 
 if [ ! -d "${DIR_TO_SCAN}" ] && [ ! -f "${DIR_TO_SCAN}" ]; then
